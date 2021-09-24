@@ -1,5 +1,5 @@
 import math
-from numpy import *
+import numpy as np
 
 
 def getNext(v):
@@ -39,15 +39,8 @@ def spirale(M):
         v = getNext(v)[0]
     return M
 
-    
 
-
-tableau = zeros((20,12))
-
-# print(getNext([1,0]))
-# print(getNext([0,1]))
-# print(getNext([-1,0]))
-# print(getNext([0,-1]))
+tableau = np.zeros((20,12))
 
 
 print(spirale(tableau))
